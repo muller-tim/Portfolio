@@ -1,9 +1,9 @@
 async function loadPage(path) {
     const content = document.getElementById("content");
-    const page = path === "/" ? "pages/home.html" : path.replace("/", "");
+    const page = path === "/Portfolio" ? "/pages/home.html" : path;
     
     try {
-        const response = await fetch(`/${page}`);
+        const response = await fetch(`/Portfolio${page}`);
         if(!response.ok) throw new Error(`${page} not found`);
 
         const html = await response.text();
