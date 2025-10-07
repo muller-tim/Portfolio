@@ -1,6 +1,5 @@
 async function loadPage(path) {
     const content = document.getElementById("content");
-    console.log(path);
     const page = path === "/Portfolio/" || path === "/" ? "/pages/home.html" : path;
     
     try {
@@ -12,7 +11,6 @@ async function loadPage(path) {
 
         if (window.location.hash) {
             const el = document.querySelector(window.location.hash);
-            console.log(el)
             if (el) {
                 el.scrollIntoView({ behavior: "smooth" });
             } else {
