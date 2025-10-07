@@ -2,16 +2,21 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #0f151c;
-    /*color: #007fff;*/
-    color: #f5faff;
-    font-family: sans-serif;
-
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
+}
+
+body {
+    background-color: #0f151c;
+    color: #f5faff;
+    font-family: sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 nav {
@@ -60,14 +65,14 @@ nav a:hover {
 }
 
 main {
+    flex: 1;
     width: 60%;
     margin: 0 20%;
 }
 
-#Home {
+.content-Container {
     display: block;
     padding: 22.5% 0;
-    height: 50%;
     border-bottom: #007fff 3px solid;
 }
 
@@ -95,7 +100,7 @@ h3 {
     font-size: 2rem;
 }
 
-#Home p {
+.content-Container p {
     font-size: 1.5rem;
     margin: 2rem 0;
     padding: 0;
@@ -127,7 +132,7 @@ section:last-of-type {
     text-overflow: clip;
 }
 
-.projects-container .imgContainer {
+.imgContainer {
     aspect-ratio: 16 / 9;
     width: 100%;
     overflow: hidden;
@@ -145,7 +150,7 @@ section:last-of-type {
     margin: 1.5rem 0;
 }
 
-.projects-container a {
+a {
     color: #007fff;
 }
 
@@ -164,9 +169,6 @@ section:last-of-type {
     margin: 0 5px;
 }
 
-
-
-
 .footer {
     width: 100%;
     background-color: #0f151c;
@@ -181,7 +183,7 @@ section:last-of-type {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* sorgt für gutes Verhalten bei kleinen Bildschirmen */
+    flex-wrap: wrap;
 }
 
 .footer-text {
@@ -195,7 +197,7 @@ section:last-of-type {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    gap: 1rem; /* gleichmäßiger Abstand zwischen Icons */
+    gap: 1rem;
 }
 
 .social-links li {
@@ -219,6 +221,28 @@ section:last-of-type {
 
 .social-links i {
     font-size: 1.2rem;
+}
+
+.project-page {
+    margin: 10% 0;
+    
+}
+
+.project-page p {
+    text-align: justify;
+}
+
+.project-page img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
 }
 
 @media (max-width: 1024px) {
@@ -246,7 +270,6 @@ section:last-of-type {
     }
 }
 
-/* --- Smartphones (max. 768px) --- */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -284,12 +307,12 @@ section:last-of-type {
         font-size: 1.3rem;
     }
 
-    #Home {
+    .content-Container {
         padding: 10% 0;
         height: auto;
     }
 
-    #Home p {
+    .content-Container p {
         font-size: 1.2rem;
     }
 
@@ -323,9 +346,12 @@ section:last-of-type {
     .footer-text {
         font-size: 0.9rem;
     }
+
+    .two-columns {
+        grid-template-columns: 1fr;
+    }
 }
 
-/* --- Kleine Smartphones (max. 480px) --- */
 @media (max-width: 480px) {
     body {
         font-size: 0.9rem;
@@ -347,7 +373,7 @@ section:last-of-type {
         font-size: 1.1rem;
     }
 
-    #Home p {
+    .content-Container p {
         font-size: 1rem;
     }
 
