@@ -1,6 +1,7 @@
 async function loadPage(path) {
     const content = document.getElementById("content");
-    const page = path === "/Portfolio" || path === "/" ? "/pages/home.html" : path;
+    console.log(path);
+    const page = path === "/Portfolio/" || path === "/" ? "/pages/home.html" : path;
     
     try {
         const response = await fetch(`/Portfolio${page}`);
