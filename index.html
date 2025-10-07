@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/49a5bee20f.js" crossorigin="anonymous"></script>
     <title>Tim Muller</title>
 </head>
 <body>
-    <nav>
+    <nav aria-label="Main Navigation">
         <ul>
             <li class="nav-link"><a href="#Home">Home</a></li>
             <li class="nav-link"><a href="#Projects">Projects</a></li>
@@ -16,7 +17,7 @@
     </nav>
     <main>
         <section id="Home">
-            <header>
+            <header aria-labelledby="home-heading">
                 <h1>Welcome to TIM MULLER's Portfolio!</h1>
                 <span class="subheader">Bringing worlds to life 🎮</span>
             </header>
@@ -25,33 +26,33 @@
             <p>As a newcomer to the games industry, I bring fresh energy and a strong drive to learn. I’m committed to mastering new techniques and sharpening my programming skills through hands-on experience. Having already participated in game jams, I’m eager to take part in many more, pushing my creativity, testing my limits, and turning ideas into playable realities.</p>
         </section>
 
-        <section id="Projects">
+        <section id="Projects" aria-labelledby="projects-heading">
             <h2>Projects</h2>
             <div class="projects-container">
-                <article>
-                    <div class="imgContainer"><img src="./images/bob.jpg" alt="Image of the Game Battle of Bots"></div>
+                <article aria-labelledby="bob-title">
+                    <div class="imgContainer"><img src="./images/bob.jpg" alt="Screenshot from the game Battle of Bots"></div>
                     <h3>BoB - Battle of Bots</h3>
-                    <div class="tag-container">
+                    <div class="tag-container" aria-label="Used technologies">
                         <span class="tag">Unity</span>
                         <span class="tag">C#</span>
                     </div>
                     <p class="description">Battle of Bots is a Third-Person-Shooter game where the player has to survive as long as he can against endless enemy waves. The game originated at the game jam "GDW Trier" and is now still under development.</p>
                     <a href="./pages/bob.html">More Details...</a>
                 </article>
-                <article>
-                    <div class="imgContainer"><img src="./images/mesh_decimation.png" alt=""></div>
+                <article aria-labelledby="mesh-decimation-title">
+                    <div class="imgContainer"><img src="./images/mesh_decimation.png" alt="Screenshot of the Mesh Decimation Tool"></div>
                     <h3>Mesh Decimation Tool</h3>
-                    <div class="tag-container">
+                    <div class="tag-container" aria-label="Used technologies">
                         <span class="tag">C++</span>
                         <span class="tag">OpenGL</span>
                     </div>
                     <p class="description">The Mesh Decimation Tool can reduce the amount of faces of a mesh. The tool tries to reduce the faces without changing the shape of the mesh too much. The mesh can be imported as an OBJ file and the reduced mesh can also be exported as an OBJ File.</p>
                     <a href="./pages/mesh_decimation.html">More Details...</a>
                 </article>
-                <article>
-                    <div class="imgContainer"><img src="./images/brainrow.png" alt=""></div>
+                <article aria-labelledby="brainrow-title">
+                    <div class="imgContainer"><img src="./images/brainrow.png" alt="Screenshot of the game Brain-Row Challenge"></div>
                     <h3>Brain-Row Challenge VR Implementation</h3>
-                    <div class="tag-container">
+                    <div class="tag-container" aria-label="Used technologies">
                         <span class="tag">Unity</span>
                         <span class="tag">C#</span>
                         <span class="tag">VR</span>
@@ -59,20 +60,20 @@
                     <p class="description">The game Brain-Row Challenge was developed by Prof. Dr. Christoph Lürig and I ported the game to VR. The game is a rowing simulator where the player needs to answer questions during the rowing. The game is played with a Concept 2 rowing machine.</p>
                     <a href="./pages/brainrow.html">More Details...</a>
                 </article>
-                <article>
-                    <div class="imgContainer"><img src="./images/Rubiks_cube.png" alt=""></div>
+                <article aria-labelledby="rubiks-cube-title">
+                    <div class="imgContainer"><img src="./images/Rubiks_cube.png" alt="Screenshot of the Rubiks Cube Application"></div>
                     <h3>Rubiks Cube</h3>
-                    <div class="tag-container">
+                    <div class="tag-container" aria-label="Used technologies">
                         <span class="tag">C++</span>
                         <span class="tag">OpenGL</span>
                     </div>
                     <p class="description">The Rubiks Cube is ... well a Rubiks Cube. The Rubiks Cube is completly coded in C++ and OpenGL with a few additional math libraries. The cube can be controlled with a mouse.</p>
                     <a href="./pages/rubiks_cube.html">More Details...</a>
                 </article>
-                <article>
-                    <div class="imgContainer"><img src="./images/particle_sim.png" alt=""></div>
+                <article aria-labelledby="particle-sim-title">
+                    <div class="imgContainer"><img src="./images/particle_sim.png" alt="Screenshot of the particle simulation"></div>
                     <h3>Particle Simulation</h3>
-                    <div class="tag-container">
+                    <div class="tag-container" aria-label="Used technologies">
                         <span class="tag">C++</span>
                         <span class="tag">OpenGL</span>
                         <span class="tag">CUDA</span>
@@ -80,20 +81,20 @@
                     <p class="description"></p>
                     <a href="./pages/particle_sim.html">More Details...</a>
                 </article>
-                <article>
-                    <div class="imgContainer"><img src="./images/Phiaro.jpg" alt=""></div>
+                <article aria-labelledby="phiaro-title">
+                    <div class="imgContainer"><img src="./images/Phiaro.jpg" alt="Screenshot of the game phiaro"></div>
                     <h3>Phiaro Prototype</h3>
-                    <div class="tag-container">
+                    <div class="tag-container" aria-label="Used technologies">
                         <span class="tag">Unreal Engine</span>
                         <span class="tag">Blueprints</span>
                     </div>
                     <p class="description">Phiaro is an action and puzzle game. The prototype includes a few enemies to fight against and a small puzzle to reach the top of the main room. The player starts with sword/dagger and can find a bow in the level.</p>
                     <a href="./pages/phiaro.html">More Details...</a>
                 </article>
-                <article>
-                    <div class="imgContainer"><img src="./images/GOB.jpg" alt=""></div>
+                <article aria-labelledby="gob-title">
+                    <div class="imgContainer"><img src="./images/GOB.jpg" alt="Screenshot of the Goal Oriented Action Planning Project"></div>
                     <h3>Goal-Oriented-Behaviour</h3>
-                    <div class="tag-container">
+                    <div class="tag-container" aria-label="Used technologies">
                         <span class="tag">Unreal Engine</span>
                         <span class="tag">Blueprints</span>
                     </div>
@@ -103,8 +104,23 @@
             </div>
         </section>
     </main>
-    <footer>
-        https://github.com/muller-tim
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">©2025 Tim Muller</p>
+
+            <ul class="social-links">
+            <li>
+                <a href="https://github.com/muller-tim" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/tim_muller20/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
+                </a>
+            </li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
